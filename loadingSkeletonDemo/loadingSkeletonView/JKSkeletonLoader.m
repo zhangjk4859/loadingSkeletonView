@@ -57,6 +57,10 @@ static CGFloat gradientFirstStop     = 0.1;
  如不遵循协议，私有分类只需实现@implementation即可🐭🐂🐅🐇🐉🐍🐴🐑🐒🐔🐩🐖
  */
 @implementation UIView (ListLoadable)
+-(NSArray<UIView *> *)jk_visibleContentViews{
+    NSArray *views = @[self];
+    return views;
+}
 -(void)boundInside:(UIView *)superView{
     //关闭 自适应
     self.translatesAutoresizingMaskIntoConstraints = NO;
